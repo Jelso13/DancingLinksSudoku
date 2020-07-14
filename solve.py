@@ -4,6 +4,7 @@ from project.Sudoku import Sudoku
 
 
 def sudoku_solver(sudoku):
+    sudoku = np.array(sudoku)
     s = Sudoku()
     solExample, fExample = s.solve(sudoku.astype(int))
     x = s.returnSol(solExample, fExample)
